@@ -2,23 +2,24 @@ import './style.css'
 import javascriptLogo from './javascript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.js'
+import ScrollReveal from 'scrollreveal';
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// Inisialisasi ScrollReveal
+const sr = ScrollReveal({
+    distance: '60px',
+    duration: 1000,
+    delay: 700,
+});
 
-setupCounter(document.querySelector('#counter'))
+// Menerapkan animasi ke semua elemen <section>
+sr.reveal('.seksikepsek', {
+    delay: 500,
+    origin: 'bottom',
+    opacity: 0,
+    easing: 'ease-in-out',
+    reset: true
+});
+
+// Kamu juga bisa menambahkan animasi spesifik lainnya di sini
+// sr.reveal('.headline');
+
