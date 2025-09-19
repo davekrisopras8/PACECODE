@@ -20,66 +20,116 @@
       <nav
         class="container mx-auto px-4 py-2 flex justify-between items-center"
       >
-        <a href="/" class="flex items-ce  nter space-x-3">
+        <a href="/" class="flex items-center space-x-3">
           <img src="/assets/logo.png" alt="Logo Sekolah" class="h-15" />
-          <span class="text-xl font-bold text-gray-800 mt-3">SMKN 1 Dlanggu</span>
+          <span class="text-xl font-bold text-gray-800 mt-3"
+            >SMKN 1 Dlanggu</span
+          >
         </a>
 
         <ul
           class="hidden md:flex items-center space-x-8 text-gray-600 font-medium"
         >
-          <li>
+          <li class="relative">
             <a
               href="#"
-              class="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
+              class="nav-link-dropdown flex items-center gap-1 relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
             >
               Profil
             </a>
+            <div
+              class="dropdown-panel absolute top-full left-0 mt-2 w-70 bg-white rounded-md shadow-lg p-2 transition-all duration-300 ease-in-out opacity-0 -translate-y-2 invisible"
+            >
+              <a
+                href="profil.html"
+                class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                >Profil Sekolah</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                >Profil Guru</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                >Fasilitas</a
+              >
+              <a
+                href="#"
+                class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                >Galeri</a
+              >
+            </div>
           </li>
-          <li>
+
+          <li class="relative">
             <a
               href="#"
-              class="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
+              class="nav-link-dropdown flex items-center gap-1 relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
             >
               Jurusan
             </a>
+            <div
+              class="dropdown-panel absolute top-full left-0 mt-2 w-116 bg-white rounded-md shadow-lg p-2 transition-all duration-300 ease-in-out opacity-0 -translate-y-2 invisible"
+            >
+              <div class="grid grid-cols-2 gap-x-4">
+                <div>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Rekayasa Perangkat Lunak</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Teknik Komputer Jaringan</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Desain Komunikasi Visual</a
+                  >
+                </div>
+                <div>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Animasi</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Kuliner</a
+                  >
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-lg text-gray-700 rounded hover:bg-indigo-50 hover:text-indigo-600"
+                    >Perhotelan</a
+                  >
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <a
+              href="#"
+              class="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
+              >Berita</a
+            >
           </li>
           <li>
             <a
               href="#"
               class="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
+              >Portfolio</a
             >
-              Berita
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              class="relative hover:text-indigo-600 after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-indigo-600 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              Portfolio
-            </a>
           </li>
         </ul>
 
         <button class="btn-animated group">
           <span class="relative z-10">Contact Us</span>
-        </button>
-
-        <button class="md:hidden">
-          <svg
-            class="w-6 h-6"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
         </button>
       </nav>
     </header>
@@ -105,10 +155,9 @@
           </p>
           <a href="#">
             <button class="btn-animated btn-white group">
-              <span>Selengkapnya
-              </span>
+              <span>Selengkapnya </span>
             </button>
-            </a>
+          </a>
         </div>
       </section>
       <section class="py-20 bg-white seksikepsek">
@@ -139,7 +188,7 @@
               dapat berbagi informasi dan pencapaian sekolah kepada masyarakat
               luas. Mari bersama-sama kita majukan pendidikan vokasi Indonesia.
             </p>
-            
+
             <p class="text-gray-500">Kepala SMKN 1 Dlanggu</p>
           </div>
         </div>
@@ -147,54 +196,58 @@
 
       <!-- VISI MISI -->
       <section class="py-20 bg-gray-50">
-  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-stretch">
-    <div
-      class="bg-white p-8 rounded-lg shadow-lg transform transition-all duration-500 hover:-translate-y-2 hover:bg-indigo-600 hover:text-white group"
-    >
-      <h3
-        class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-white"
-      >
-        VISI
-      </h3>
-      <p class="text-2xl text-gray-700 leading-relaxed group-hover:text-white">
-        "Visi SMK Negeri 1 Dlanggu adalah Terwujudnya Tamatan yang
-        Berkarakter Mulia"
-      </p>
-    </div>
+        <div
+          class="container mx-auto px-4 grid md:grid-cols-2 gap-8 items-stretch"
+        >
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg transform transition-all duration-500 hover:-translate-y-2 hover:bg-violet-800 hover:text-white group"
+          >
+            <h3
+              class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-white"
+            >
+              VISI
+            </h3>
+            <p
+              class="text-2xl text-gray-700 leading-relaxed group-hover:text-white"
+            >
+              "Visi SMK Negeri 1 Dlanggu adalah Terwujudnya Tamatan yang
+              Berkarakter Mulia"
+            </p>
+          </div>
 
-    <div
-      class="bg-white p-8 rounded-lg shadow-lg transform transition-all duration-500 hover:-translate-y-2 hover:bg-indigo-600 hover:text-white group"
-    >
-      <h3
-        class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-white"
-      >
-        MISI
-      </h3>
-      <ol
-        class="list-decimal list-inside space-y-2 text-gray-700 leading-relaxed group-hover:text-white"
-      >
-        <li class="text-1xl">
-          Mewujudkan jiwa beriman dan bertaqwa, mandiri, kerjasama,
-          bernalar kritis, kreatif, bertanggung jawab, dan berkebhinekaan
-          global.
-        </li>
-        <li class="text-1xl">
-          Melaksanakan kurikulum berstandar kompetensi sesuai kebutuhan
-          IDUKA.
-        </li>
-        <li class="text-1xl">
-          Menumbuhkan sikap budaya kerja dan jiwa kewirausahaan di bidang
-          pariwisata, seni dan teknologi.
-        </li>
-        <li class="text-1xl">
-          Meningkatkan profesionalisme tenaga pendidik dan kependidikan
-          yang mempunyai standar kompetensi sesuai dengan konsentrasi
-          keahlian.
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
+          <div
+            class="bg-white p-8 rounded-lg shadow-lg transform transition-all duration-500 hover:-translate-y-2 hover:bg-violet-800  hover:text-white group"
+          >
+            <h3
+              class="text-2xl font-bold mb-4 text-gray-800 group-hover:text-white"
+            >
+              MISI
+            </h3>
+            <ol
+              class="list-decimal list-inside space-y-2 text-gray-700 leading-relaxed group-hover:text-white"
+            >
+              <li class="text-1xl">
+                Mewujudkan jiwa beriman dan bertaqwa, mandiri, kerjasama,
+                bernalar kritis, kreatif, bertanggung jawab, dan berkebhinekaan
+                global.
+              </li>
+              <li class="text-1xl">
+                Melaksanakan kurikulum berstandar kompetensi sesuai kebutuhan
+                IDUKA.
+              </li>
+              <li class="text-1xl">
+                Menumbuhkan sikap budaya kerja dan jiwa kewirausahaan di bidang
+                pariwisata, seni dan teknologi.
+              </li>
+              <li class="text-1xl">
+                Meningkatkan profesionalisme tenaga pendidik dan kependidikan
+                yang mempunyai standar kompetensi sesuai dengan konsentrasi
+                keahlian.
+              </li>
+            </ol>
+          </div>
+        </div>
+      </section>
       <section class="py-20 bg-white">
         <div class="container mx-auto px-4 text-center">
           <h2 class="text-3xl font-bold mb-12">Kegiatan Terbaru</h2>
@@ -357,7 +410,7 @@
         <div>
           <h4 class="font-bold text-white mb-4">Navigasi</h4>
           <ul class="space-y-2 text-sm">
-            <li><a href="#" class="hover:text-white">Profil</a></li>
+            <li><a href="profil.html" class="hover:text-white">Profil Sekolah</a></li>
             <li><a href="#" class="hover:text-white">Jurusan</a></li>
             <li><a href="#" class="hover:text-white">Berita</a></li>
             <li><a href="#" class="hover:text-white">Guru</a></li>
@@ -375,5 +428,187 @@
         </p>
       </div>
     </footer>
+
+    <!-- modal -->
+
+    <div
+      id="profil-modal"
+      class="fixed inset-0 z-[60] bg-black bg-opacity-50 flex items-center justify-center p-4 hidden"
+    >
+      <div
+        class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl p-8 relative"
+      >
+        <button
+          data-close-modal="profil-modal"
+          class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="space-y-6">
+            <h2 class="text-2xl font-bold text-gray-800">Profil Sekolah</h2>
+            <a
+              href="#"
+              class="block font-semibold text-gray-600 hover:text-indigo-600"
+              >Sejarah</a
+            >
+            <a
+              href="#"
+              class="block font-semibold text-gray-600 hover:text-indigo-600"
+              >Visi & Misi</a
+            >
+            <a
+              href="#"
+              class="block font-semibold text-gray-600 hover:text-indigo-600"
+              >Struktur Organisasi</a
+            >
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-gray-100 rounded-lg p-4 text-center">
+              <img
+                src="https://placehold.co/100x100/e2e8f0/334155"
+                alt="Icon"
+                class="mx-auto mb-2 rounded-full"
+              />
+              <span class="text-sm font-semibold">Tenaga Pendidik</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-4 text-center">
+              <img
+                src="https://placehold.co/100x100/e2e8f0/334155"
+                alt="Icon"
+                class="mx-auto mb-2 rounded-full"
+              />
+              <span class="text-sm font-semibold">Fasilitas</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-4 text-center">
+              <img
+                src="https://placehold.co/100x100/e2e8f0/334155"
+                alt="Icon"
+                class="mx-auto mb-2 rounded-full"
+              />
+              <span class="text-sm font-semibold">Kerja Sama Industri</span>
+            </div>
+            <div class="bg-gray-100 rounded-lg p-4 text-center">
+              <img
+                src="https://placehold.co/100x100/e2e8f0/334155"
+                alt="Icon"
+                class="mx-auto mb-2 rounded-full"
+              />
+              <span class="text-sm font-semibold">Ekstrakurikuler</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="jurusan-modal"
+      class="fixed inset-0 z-[60] bg-black bg-opacity-50 flex items-center justify-center p-4 hidden"
+    >
+      <div
+        class="bg-white rounded-2xl shadow-2xl w-full max-w-4xl p-8 relative"
+      >
+        <button
+          data-close-modal="jurusan-modal"
+          class="absolute top-4 right-4 text-gray-400 hover:text-gray-800"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Program Keahlian</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon RPL"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">RPL</h3>
+              <p class="text-sm text-gray-600">Rekayasa Perangkat Lunak</p>
+            </div>
+          </div>
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon TKJ"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">TKJ</h3>
+              <p class="text-sm text-gray-600">Teknik Komputer & Jaringan</p>
+            </div>
+          </div>
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon DKV"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">DKV</h3>
+              <p class="text-sm text-gray-600">Desain Komunikasi Visual</p>
+            </div>
+          </div>
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon Animasi"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">Animasi</h3>
+              <p class="text-sm text-gray-600">Teknik Animasi</p>
+            </div>
+          </div>
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon Kuliner"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">Kuliner</h3>
+              <p class="text-sm text-gray-600">Tata Boga</p>
+            </div>
+          </div>
+          <div class="bg-indigo-50 rounded-lg p-4 flex items-center space-x-4">
+            <img
+              src="https://placehold.co/60x60/c7d2fe/3730a3"
+              alt="Icon Perhotelan"
+              class="rounded-lg"
+            />
+            <div>
+              <h3 class="font-bold">Perhotelan</h3>
+              <p class="text-sm text-gray-600">Manajemen Perhotelan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
